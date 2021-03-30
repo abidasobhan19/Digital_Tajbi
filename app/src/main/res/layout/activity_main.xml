@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:background="@color/teal_700"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            android:text="Digital Tajbi"
+            android:gravity="center"
+            />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+
+    <ImageView
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:layout_width="650dp"
+        android:layout_height="700dp"
+        android:src="@drawable/ogimage"
+        />
+
+
+   <TextView
+       android:layout_marginTop="-450dp"
+       android:gravity="center"
+       android:id="@+id/count"
+       android:textSize="40sp"
+       android:textStyle="bold"
+       android:fontFamily="@font/seven"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_gravity="center"
+       >
+
+   </TextView>
+
+
+
+    <Button
+        android:background="@color/Transparent"
+        android:layout_marginTop="60dp"
+        android:id="@+id/btn"
+
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <Button
+        android:background="@color/Transparent"
+        android:layout_marginTop="-150dp"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/btn_reset"
+        android:layout_gravity="center"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:gravity="center"
+        android:textSize="10sp"
+        android:text="Reset"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginLeft="60dp"
+
+        android:layout_width="50dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        >
+
+    </TextView>
+
+</LinearLayout>

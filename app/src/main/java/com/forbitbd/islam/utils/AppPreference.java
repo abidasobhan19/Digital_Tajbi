@@ -2,17 +2,13 @@ package com.forbitbd.islam.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.util.Log;
 
 public class AppPreference {
 
     private static final String SP_NAME ="AppPreference";
     private static final String COUNTER ="COUNTER";
-
     private SharedPreferences userLocalDatabase;
-
     private static com.forbitbd.islam.utils.AppPreference instance;
-
 
     private AppPreference(Context context){
         userLocalDatabase = context.getSharedPreferences(SP_NAME,0);
@@ -25,22 +21,15 @@ public class AppPreference {
         return instance;
     }
 
-
     public void increaseCounter(){
         int prev = userLocalDatabase.getInt(COUNTER,1);
-
-        Log.d("jjjjj", "increaseCounter: "+prev);
         prev++;
         userLocalDatabase.edit().putInt(COUNTER,prev).apply();
-
-
 
     }
     public int getCounter(){
         return userLocalDatabase.getInt(COUNTER,1);
     }
-
-
 
     public void resetCounter(){
         userLocalDatabase.edit().putInt(COUNTER,0).apply();

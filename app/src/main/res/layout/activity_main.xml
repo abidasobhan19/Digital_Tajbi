@@ -7,8 +7,24 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="@drawable/digital_tasbih">
+    android:background="@drawable/mosque">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/green"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Digital Tasbeeh"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+    </com.google.android.material.appbar.MaterialToolbar>
 
     <Switch
         android:id="@+id/mute"
@@ -17,8 +33,7 @@
         android:layout_gravity="end"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
-        android:text="mute"
-        android:textColor="@color/white"/>
+        android:text="mute"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -29,50 +44,41 @@
             android:scaleType="fitCenter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="50dp"
+            android:layout_margin="50dp"
             android:src="@drawable/tasbih" />
 
-        <LinearLayout
+        <TextView
+            android:gravity="center"
+            android:id="@+id/count"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/seven"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:layout_height="50dp"
+            android:layout_marginTop="210dp"/>
 
-            <TextView
-                android:gravity="center"
-                android:id="@+id/count"
-                android:textSize="40sp"
-                android:textStyle="bold"
-                android:fontFamily="@font/seven"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="207dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:background="@drawable/effect"
+            android:id="@+id/btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="310dp" />
 
-            <com.google.android.material.button.MaterialButton
-                android:background="@color/Transparent"
-                android:layout_marginLeft="57dp"
-                android:layout_marginTop="10dp"
-                android:id="@+id/btn_reset"
-                android:layout_width="40dp"
-                android:layout_height="40dp"/>
-
-            <com.google.android.material.button.MaterialButton
-                android:background="@drawable/effect"
-                android:id="@+id/btn"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-               android:layout_marginTop="5dp" />
-
-        </LinearLayout>
-
+        <com.google.android.material.button.MaterialButton
+            android:background="@color/Transparent"
+            android:layout_marginLeft="247dp"
+            android:layout_marginTop="273dp"
+            android:id="@+id/btn_reset"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
 
         <TextView
             android:gravity="center"
             android:text="Reset"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:layout_marginLeft="244dp"
+            android:layout_marginLeft="240dp"
             android:layout_marginTop="310dp"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
